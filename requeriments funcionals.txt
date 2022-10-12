@@ -1,0 +1,40 @@
+Requeriments funcionals:
+
+3 llistes
+
+1 llistat de tots alumnes que ha de tenir el grup(curs i clase) ,nom ,cognom e email.
+GRUPS (dam1,dam2,daw1,daw2,smix1,smix2,asix1,asix2)
+
+
+2 llistat de alumnes per grup
+que surtin tots els alumnes quan busques un grup
+nom,cognom,email 
+
+
+3 llista de tots els grups 
+grup, cicle, aula, 
+
+
+Una clase grupo que tenga 
+
+
+
+
+
+
+
+
+
+
+4 mostrar tots els alumnes d'una uf 
+hores_totals_uf, nom_uf, alumnes(nom, cognom, id, hores_asistides, percentatge)
+
+
+5 mostrar tots els alumnes d'un modul
+nom_modul, hores_total_modul, ufs(hores_totals_uf, nom, alumnes(nom, cognom, id, hores_asistides, percentatge) )
+
+
+6 mostrar les dades d'un alumne segons id 
+nom,cognom,id,email,ufs?
+
+
