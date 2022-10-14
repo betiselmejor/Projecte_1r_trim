@@ -1,6 +1,7 @@
 package com.example.prova_api.student;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -243,8 +244,8 @@ public class StudentController {
 
     }
 
-    @GetMapping(path = "/12345678F")
-    public ArrayList<Student_Array_ufs> get_student_by_id() {
+    @GetMapping(path = "/{ID}")
+    public ArrayList<Student_Array_ufs> get_student_by_id(@PathVariable String ID) {
         ArrayList<Student> students = getStudents();
         ArrayList<UF_no_student_array> ufs_post = new ArrayList<>();
         int hores_t;
@@ -252,7 +253,7 @@ public class StudentController {
 
         ArrayList<Student_Array_ufs> persona = new ArrayList<>();
         for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getID().equals("12345678F")) {
+            if (students.get(i).getID().equals(ID)) {
                 persona.add(new Student_Array_ufs(
                         students.get(i).getNom(),
                         students.get(i).getCognoms(),
@@ -299,4 +300,3 @@ public class StudentController {
         }
 
     }
-
