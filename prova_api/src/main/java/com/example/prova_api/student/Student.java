@@ -14,6 +14,16 @@ public class Student {
 
     private String email;
 
+    private String grup;
+
+
+    public String getGrup() {
+        return grup;
+    }
+
+    public void setGrup(String grup) {
+        this.grup = grup;
+    }
 
     public String getNom() {
         return nom;
@@ -61,5 +71,12 @@ public class Student {
         this.ID = ID;
     }
 
-
+    public Student(String nom, String cognoms, LocalDate data_neixement, String ID, String grup) {
+        this.nom = nom;
+        this.cognoms = cognoms;
+        this.data_neixement = data_neixement;
+        this.ID = ID;
+        this.grup = grup;
+    }
 }
+
