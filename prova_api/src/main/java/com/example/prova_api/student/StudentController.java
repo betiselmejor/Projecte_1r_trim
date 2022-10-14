@@ -21,13 +21,14 @@ public class StudentController {
     public ArrayList<Student> getStudents() {
         ArrayList<Student> students = new ArrayList<>();
 
-        students.add(new Student("Joana", "Petita", LocalDate.of(2000, Month.MARCH, 22), "12345678A"));
-        students.add(new Student("Joan", "Petit", LocalDate.of(2000, Month.MARCH, 23), "12345678B"));
-        students.add(new Student("Marina", "Moreno", LocalDate.of(1995, Month.JANUARY, 19), "12345678C"));
-        students.add(new Student("Ivan", "Gallego", LocalDate.of(2003, Month.OCTOBER, 1), "12345678D"));
-        students.add(new Student("Pol", "Pou", LocalDate.of(1998, Month.JULY, 12), "12345678E"));
-        students.add(new Student("Maria", "Parras", LocalDate.of(1997, Month.AUGUST, 6), "12345678F"));
-        students.add(new Student("Laura", "Perez", LocalDate.of(2002, Month.DECEMBER, 8), "12345678G"));
+        students.add(new Student("Joana", "Petita", LocalDate.of(2000, Month.MARCH, 22), "12345678A","DAM1"));
+        students.add(new Student("Joan", "Petit", LocalDate.of(2000, Month.MARCH, 23), "12345678B","DAM2"));
+        students.add(new Student("Marina", "Moreno", LocalDate.of(1995, Month.JANUARY, 19), "12345678C","DAW1"));
+        students.add(new Student("Ivan", "Gallego", LocalDate.of(2003, Month.OCTOBER, 1), "12345678D","DAW2"));
+        students.add(new Student("Pol", "Pou", LocalDate.of(1998, Month.JULY, 12), "12345678E","SMIX1"));
+        students.add(new Student("Maria", "Parras", LocalDate.of(1997, Month.AUGUST, 6), "12345678F","SMIX2"));
+        students.add(new Student("Laura", "Perez", LocalDate.of(2002, Month.DECEMBER, 8), "12345678G","ASIX1"));
+        students.add(new Student("Lorena", "Gutierrez", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","ASIX2"));
         for(int i =0; i< students.size();i++){
             students.get(i).setEmail();
         }
