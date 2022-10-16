@@ -14,30 +14,6 @@ import java.util.List;
 @RequestMapping(path = "api/student")//el path per accedir ja no sera localhost 8080 si no que a mes afegim aixo per a poder entrar a la clase
 public class StudentController {
 
-    modul M1 = new modul("M1", 60, getUfs_M1());
-    modul M2 = new modul("M2", 60, getUfs_M2());
-
-
-    //LLISTA DE TOTS ELS ALUMNES
-    @GetMapping(path = "/student_list")// aquest es un dels punts de restcontroller
-    public ArrayList<Student> getStudents() {
-        ArrayList<Student> students = new ArrayList<>();
-
-        students.add(new Student("Joana", "Petita", LocalDate.of(2000, Month.MARCH, 22), "12345678A","DAM1"));
-        students.add(new Student("Joan", "Petit", LocalDate.of(2000, Month.MARCH, 23), "12345678B","DAM2"));
-        students.add(new Student("Marina", "Moreno", LocalDate.of(1995, Month.JANUARY, 19), "12345678C","DAW1"));
-        students.add(new Student("Ivan", "Gallego", LocalDate.of(2003, Month.OCTOBER, 1), "12345678D","DAW2"));
-        students.add(new Student("Pol", "Pou", LocalDate.of(1998, Month.JULY, 12), "12345678E","SMIX1"));
-        students.add(new Student("Maria", "Parras", LocalDate.of(1997, Month.AUGUST, 6), "12345678F","SMIX2"));
-        students.add(new Student("Laura", "Perez", LocalDate.of(2002, Month.DECEMBER, 8), "12345678G","ASIX1"));
-        students.add(new Student("Lorena", "Gutierrez", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","ASIX2"));
-        for(int i =0; i< students.size();i++){
-            students.get(i).setEmail();
-        }
-
-        return students;
-    }
-
 
     //Aqui tindrem afegirem totes les ufs del modul2
     public ArrayList<UF> getUfs_M2() {
@@ -212,6 +188,51 @@ public class StudentController {
 
 
 
+    public ArrayList<UF> getUfs(){
+        ArrayList<UF> ufs1= getUfs_M1();
+        ArrayList<UF> ufs2=getUfs_M2();
+
+        ArrayList<UF> ufs_t= new ArrayList<>();
+
+        ufs_t.addAll(ufs1);
+        ufs_t.addAll(ufs2);
+
+
+        return ufs_t;
+    }
+
+
+    //LLISTA DE TOTS ELS ALUMNES
+    @GetMapping(path = "/student_list")// aquest es un dels punts de restcontroller
+    public ArrayList<Student> getStudents() {
+        ArrayList<Student> students = new ArrayList<>();
+
+        students.add(new Student("Joana", "Petita", LocalDate.of(2000, Month.MARCH, 22), "12345678A","DAM1"));
+        students.add(new Student("Joan", "Petit", LocalDate.of(2000, Month.MARCH, 23), "12345678B","DAM2"));
+        students.add(new Student("Marina", "Moreno", LocalDate.of(1995, Month.JANUARY, 19), "12345678C","DAW1"));
+        students.add(new Student("Ivan", "Gallego", LocalDate.of(2003, Month.OCTOBER, 1), "12345678D","DAW2"));
+        students.add(new Student("Pol", "Pou", LocalDate.of(1998, Month.JULY, 12), "12345678E","SMIX1"));
+        students.add(new Student("Maria", "Parras", LocalDate.of(1997, Month.AUGUST, 6), "12345678F","SMIX2"));
+        students.add(new Student("Laura", "Perez", LocalDate.of(2002, Month.DECEMBER, 8), "12345678G","ASIX1"));
+        students.add(new Student("Lorena", "Gutierrez", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","ASIX2"));
+        students.add(new Student("Lola", "Lolita", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","ASIX1"));
+        students.add(new Student("Paula", "Costa", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","DAM1"));
+        students.add(new Student("Janna", "Garcia", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","DAM2"));
+        students.add(new Student("Joan", "Segoiva", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","DAM1"));
+        students.add(new Student("Carles", "Avila", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","DAW1"));
+        students.add(new Student("Pol", "Verdejo", LocalDate.of(2002, Month.DECEMBER, 19), "12345678G","DAW2"));
+
+
+
+
+
+        for(int i =0; i< students.size();i++){
+            students.get(i).setEmail();
+        }
+
+        return students;
+    }
+
 
     //MOSTRA TOTS ELS MODULS, LES UFS I ELS ALUMNES QUE ESTAN A CADA MODUL
     @GetMapping(path = "/MODULS")
@@ -219,33 +240,50 @@ public class StudentController {
         ArrayList<modul> moduls = new ArrayList<>();
         ArrayList<Student> students = (ArrayList<Student>) getStudents();
 
+        modul M1 = new modul("M1", 60, getUfs_M1());
+        modul M2 = new modul("M2", 60, getUfs_M2());
+
         moduls.add(M1);
         moduls.add(M2);
         return moduls;
     }
 
     //Mostrar un modul
-    @GetMapping(path = "/M1")
-    public ArrayList<modul> getmodul1() {
-        ArrayList<modul> moduls = new ArrayList<>();
-        moduls.add(M1);
+    @GetMapping(path = "/MODULS/{modul}")
+    public ArrayList<modul> getmodul1(@PathVariable String modul) {
+        ArrayList<modul> moduls = getmoduls();
+        ArrayList<modul> moduls_tornada = new ArrayList<>();
 
-        return moduls;
+        for (int i = 0; i<moduls.size();i++){
+            if (moduls.get(i).getNom().equals(modul)){
+                moduls_tornada.add(moduls.get(i));
+            }
+        }
+
+        return moduls_tornada;
 
     }
 
     //Mostrar una UF
-    @GetMapping(path = "/M1/UF1")
-    public UF getuf1() {
-        ArrayList<UF> ufs = new ArrayList<>();
-        ufs = getUfs_M1();
+    @GetMapping(path = "/UFS/{UF}")
+    public UF getuf1(@PathVariable String UF) {
+        ArrayList<UF> ufs = getUfs();
+        ArrayList<UF> ufs_t = new ArrayList<>();
+
+        for (int i=0; i< ufs.size();i++){
+            if (ufs.get(i).getNom().equals(UF)){
+                ufs_t.add(ufs.get(i));
+            }
+        }
 
 
-        return ufs.get(0);
+
+        return ufs_t.get(0);
 
     }
 
-    @GetMapping(path = "/{ID}")
+    //Mostrar un alumne passant el seu ID
+    @GetMapping(path = "/IDS/{ID}")
     public ArrayList<Student_Array_ufs> get_student_by_id(@PathVariable String ID) {
         ArrayList<Student> students = getStudents();
         ArrayList<UF_no_student_array> ufs_post = new ArrayList<>();
@@ -300,11 +338,55 @@ public class StudentController {
 
         }
 
+    @GetMapping(path = "/GRUPS")
+    public ArrayList<group_w_Students> getgrups(){
+        ArrayList<group_w_Students> grups = new ArrayList<>();
+        ArrayList<Student> students= getStudents();
 
+        group_w_Students DAM1= new group_w_Students("DAM1");
+        group_w_Students DAM2= new group_w_Students("DAM2");
+        group_w_Students DAW1= new group_w_Students("DAW1");
+        group_w_Students DAW2= new group_w_Students("DAW2");
+        group_w_Students ASIX1= new group_w_Students("ASIX1");
+        group_w_Students ASIX2= new group_w_Students("ASIX2");
+        group_w_Students SMIX1= new group_w_Students("SMIX1");
+        group_w_Students SMIX2= new group_w_Students("SMIX2");
+
+        grups.add(DAM1);
+        grups.add(DAM2);
+        grups.add(DAW1);
+        grups.add(DAW2);
+        grups.add(ASIX1);
+        grups.add(ASIX2);
+        grups.add(SMIX1);
+        grups.add(SMIX2);
+
+        for (int i=0;i< grups.size();i++){
+                grups.get(i).putStudents(students);
+        }
+
+
+        return grups;
+    }
+
+    @GetMapping(path = "/GRUPS/{GRUP}")
+    public ArrayList<group_w_Students> get1grup(@PathVariable String GRUP){
+        ArrayList<group_w_Students> grups=getgrups();
+        ArrayList<group_w_Students> grups_r=new ArrayList<>();
+
+        for (int i=0; i< grups.size();i++){
+            if (grups.get(i).getName().equals(GRUP)){
+                grups_r.add(grups.get(i));
+            }
+        }
+
+    return grups_r;
+
+    }
 
 
     //MUESTRA TODOS LOS CICLOS CON SUS GRUPOS Y AULAS
-    @GetMapping(path = "/cicles/grups")
+    @GetMapping(path = "/cicles")
     public ArrayList<Ciclo> getCiclos(){
         ArrayList<Ciclo> ciclos=new ArrayList<>();
 
@@ -334,4 +416,6 @@ public class StudentController {
         return ciclos;
     }
 
+
     }
+
