@@ -17,6 +17,7 @@ public class StudentController {
     modul M1 = new modul("M1", 60, getUfs_M1());
     modul M2 = new modul("M2", 60, getUfs_M2());
 
+
     //LLISTA DE TOTS ELS ALUMNES
     @GetMapping(path = "/student_list")// aquest es un dels punts de restcontroller
     public ArrayList<Student> getStudents() {
@@ -298,5 +299,39 @@ public class StudentController {
         return persona;
 
         }
+
+
+
+
+    //MUESTRA TODOS LOS CICLOS CON SUS GRUPOS Y AULAS
+    @GetMapping(path = "/cicles/grups")
+    public ArrayList<Ciclo> getCiclos(){
+        ArrayList<Ciclo> ciclos=new ArrayList<>();
+
+        //arrayList con los grupos(DAM,DAW,ASIX,SMIX)
+        ArrayList<Grupo> Dam=new ArrayList<>();
+        Dam.add(new Grupo("DAM1","33"));
+        Dam.add(new Grupo("DAM2","DIBUIX"));
+
+        ArrayList<Grupo> Daw=new ArrayList<>();
+        Daw.add(new Grupo("DAW1","34"));
+        Daw.add(new Grupo("DAW2","35"));
+
+        ArrayList<Grupo> ASIX=new ArrayList<>();
+        ASIX.add(new Grupo("ASIX1","25"));
+        ASIX.add(new Grupo("ASIX2","26"));
+
+        ArrayList<Grupo> SMIX=new ArrayList<>();
+        SMIX.add(new Grupo("SMIX1","18"));
+        SMIX.add(new Grupo("SMIX2","19"));
+
+        ciclos.add(new Ciclo("DAM",Dam));
+        ciclos.add(new Ciclo("DAW",Daw));
+        ciclos.add(new Ciclo("ASIX",ASIX));
+        ciclos.add(new Ciclo("SMIx",SMIX));
+
+
+        return ciclos;
+    }
 
     }
