@@ -224,9 +224,11 @@ public class StudentController {
     }
 
     //Mostrar un modul
-    @GetMapping(path = "/M1")
+    @GetMapping(path = "MODULS/{modul}")
     public ArrayList<modul> getmodul1() {
         ArrayList<modul> moduls = new ArrayList<>();
+
+
         moduls.add(M1);
 
         return moduls;
