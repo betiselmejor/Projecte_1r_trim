@@ -1,4 +1,4 @@
-Requeriments funcionals:
+aRequeriments funcionals:
 
 3 llistes
 
@@ -22,7 +22,7 @@ Una clase grupo que tenga
 
 
 
-
+asdasdasdasds
 
 
 
