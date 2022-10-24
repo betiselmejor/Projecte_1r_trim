@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b05df24b-727e-44d6-959f-6416a352d7ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/entitats/Cicles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/entitats/EntradaSortidaAula001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/repositoris/CiclesRepositori.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/repositoris/EntradaSortidaAula001Repositori.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/repositoris/StudentsRepositori.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/serveis/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/controller/clientscontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/controller/studentscontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/entitats/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/entitats/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring_jpa/repositoris/ClientsRepositori.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spring_jpa/controller/clientscontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spring_jpa/controller/clientscontroller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spring_jpa/entitats/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spring_jpa/entitats/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../requeriments funcionals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requeriments funcionals.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +44,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/EL CRIMIN4AL/Desktop/JAUME BALMES/M13 projecte/Projecte_1r_trim/Spring_jpa&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;486a70bd3129874b540f17f213bc4aa7&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/EL CRIMIN4AL/Desktop/JAUME BALMES/M13 projecte/Projecte_1r_trim/Spring_jpa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "486a70bd3129874b540f17f213bc4aa7"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.SpringJpaApplication">
+    <configuration name="All in Spring_jpa (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_jpa" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Spring_jpa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_jpa" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Spring_jpa" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.spring_jpa.SpringJpaApplication" />
@@ -78,6 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Spring_jpa (1)" />
+        <item itemvalue="JUnit.All in Spring_jpa" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,6 +103,7 @@
       <workItem from="1666278530278" duration="11000" />
       <workItem from="1666280314630" duration="2169000" />
       <workItem from="1666527168548" duration="8851000" />
+      <workItem from="1666621263709" duration="403000" />
     </task>
     <servers />
   </component>
