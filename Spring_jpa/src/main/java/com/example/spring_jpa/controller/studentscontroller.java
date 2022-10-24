@@ -2,10 +2,12 @@ package com.example.spring_jpa.controller;
 
 
 import com.example.spring_jpa.entitats.Cicles;
+import com.example.spring_jpa.entitats.EntradaSortida;
 import com.example.spring_jpa.entitats.Student;
 
 
 import com.example.spring_jpa.repositoris.CiclesRepositori;
+import com.example.spring_jpa.repositoris.EntradaSortidaRep;
 import com.example.spring_jpa.repositoris.StudentsRepositori;
 
 
@@ -24,7 +26,8 @@ public class studentscontroller {
     @Autowired
     CiclesRepositori ciclesRep;
 
-
+    @Autowired
+    EntradaSortidaRep ESRep;
     @Autowired
     StudentService studentserv= new StudentService(studentsRep);
 
@@ -58,7 +61,10 @@ public class studentscontroller {
     }
 
 
-
+    /*TOTES LES ENTRADES Y SORTIDES*/@GetMapping("EntradaSortida")
+    public List<EntradaSortida> getES(){
+        return(List<EntradaSortida>) ESRep.findAll();
+    }
 
 
 }
