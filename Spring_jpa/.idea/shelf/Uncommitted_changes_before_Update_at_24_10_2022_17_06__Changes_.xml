@@ -1,0 +1,39 @@
+<changelist name="Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]" date="1666623971920" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 24/10/2022 17:06 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spring_jpa/entitats/Student.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spring_jpa/entitats/Student.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/Student.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spring_jpa/SpringJpaApplication.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spring_jpa/SpringJpaApplication.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/SpringJpaApplication.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spring_jpa/repositoris/StudentsRepositori.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spring_jpa/repositoris/StudentsRepositori.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/StudentsRepositori.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spring_jpa/entitats/Cicles.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spring_jpa/entitats/Cicles.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/Cicles.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spring_jpa/repositoris/CiclesRepositori.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spring_jpa/repositoris/CiclesRepositori.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/CiclesRepositori.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spring_jpa/serveis/StudentService.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spring_jpa/serveis/StudentService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/StudentService.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spring_jpa/controller/studentscontroller.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spring_jpa/controller/studentscontroller.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_17_06_[Changes]/studentscontroller.class" />
+  </binary>
+</changelist>

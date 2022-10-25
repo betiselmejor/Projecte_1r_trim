@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22090572-d430-41bf-aa8a-ef6be90240aa" name="Changes" comment="" />
+    <list default="true" id="22090572-d430-41bf-aa8a-ef6be90240aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Spring_jpa/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_jpa/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_jpa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_jpa/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_jpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_jpa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_jpa/Spring_jpa.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +52,7 @@
       <workItem from="1665946259263" duration="207000" />
       <workItem from="1665946800370" duration="59000" />
       <workItem from="1665946873902" duration="15000" />
+      <workItem from="1666619877444" duration="49000" />
     </task>
     <servers />
   </component>
