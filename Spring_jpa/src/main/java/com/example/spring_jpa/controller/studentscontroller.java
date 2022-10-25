@@ -67,4 +67,37 @@ public class studentscontroller {
     }
 
 
+    /*AFEGIR ALUMNE NOU*/@PostMapping ("student")
+    public Student newStudent(@RequestBody Student nuevo){
+        return studentsRep.save(nuevo);
+
+    }
+
+
+    /*EDITAR PRODUCTO*/ @PutMapping("student/{id}")
+    public Student editStudent(@RequestBody Student editar,@PathVariable Long id){
+
+        if ( studentsRep.existsById(id)){
+            editar.setId(id);
+            return studentsRep.save(editar);
+        }else{
+            return null;
+        }
+
+
+    }
+
+    /*BORRAR PRODUCTE*/ @DeleteMapping("student/{id}")
+    public Student deleteStudent(@PathVariable Long id){
+        if ( studentsRep.existsById(id)){
+            Student student = studentsRep.findById(id).get();
+            studentsRep.deleteById(id);
+            return student;
+        }else{
+            return null;
+        }
+
+    }
+
+
 }
